@@ -4,7 +4,6 @@ import SendIcon from "@material-ui/icons/Send";
 function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-
   const [message, setMessage] = useState("");
 
   return (
@@ -15,10 +14,12 @@ function Contact() {
           or to connect. please send me a message .
         </h3>
         <form name="contactForm" method="post" netlify>
+          <input type="hidden" name="form-name" value="contact" />
           <div className="contact__form">
             <label>
               <input
                 type="text"
+                name="name"
                 className="inpt"
                 placeholder="name"
                 onChange={(e) => setName(e.target.value)}
@@ -28,6 +29,7 @@ function Contact() {
             <label>
               <input
                 type="email"
+                name="email"
                 className="inpt"
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="email"
@@ -38,11 +40,12 @@ function Contact() {
             <label>
               <textarea
                 placeholder="Message"
+                name="message"
                 onChange={(e) => setMessage(e.target.value)}
                 value={message}
               />
             </label>
-            <button>
+            <button type="submit">
               <span>SEND</span>
               <SendIcon />
             </button>
