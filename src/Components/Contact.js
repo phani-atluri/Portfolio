@@ -1,11 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "../Css/contact.css";
 import SendIcon from "@material-ui/icons/Send";
 function Contact() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-
   return (
     <section className="contact" id="contact">
       <div className="contact__main">
@@ -22,8 +18,6 @@ function Contact() {
                 name="name"
                 className="inpt"
                 placeholder="name"
-                onChange={(e) => setName(e.target.value)}
-                value={name}
               />
             </label>
             <label>
@@ -31,19 +25,12 @@ function Contact() {
                 type="email"
                 name="email"
                 className="inpt"
-                onChange={(e) => setEmail(e.target.value)}
                 placeholder="email"
-                value={email}
               />
             </label>
 
             <label>
-              <textarea
-                placeholder="Message"
-                name="message"
-                onChange={(e) => setMessage(e.target.value)}
-                value={message}
-              />
+              <textarea placeholder="Message" name="message" />
             </label>
             <button type="submit">
               <span>SEND</span>
