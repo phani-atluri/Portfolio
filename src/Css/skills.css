@@ -1,0 +1,52 @@
+.skills > h2 {
+  padding: 10px;
+}
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  background-color: #ddd;
+  margin: 10px 0;
+}
+
+.skill {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+.skills__main {
+  padding: 20px;
+  max-width: 1020px;
+  margin: auto;
+}
+.html {
+  width: 90%;
+  background-color: rgba(39, 58, 46, 0.8);
+}
+.css {
+  width: 90%;
+  background-color: rgba(39, 58, 46, 0.8);
+}
+.js {
+  width: 80%;
+  background-color: rgba(39, 58, 46, 0.8);
+}
+.React {
+  width: 80%;
+  background-color: rgba(39, 58, 46, 0.8);
+}
+.node {
+  width: 70%;
+  background-color: rgba(39, 58, 46, 0.8);
+}
+.mDB {
+  width: 60%;
+  background-color: rgba(39, 58, 46, 0.8);
+}
+.python {
+  width: 60%;
+  background-color: rgba(39, 58, 46, 0.8);
+}

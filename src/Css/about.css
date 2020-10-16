@@ -1,0 +1,44 @@
+.about__main {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+.about > h2 {
+  padding: 10px;
+}
+
+.edu__details {
+  padding: 10px;
+  list-style-type: none;
+  margin-left: 10%;
+}
+.edu__details > li,
+.work__details > li {
+  padding-bottom: 5px;
+}
+.edu__details > li > p > span {
+  margin-left: 10px;
+}
+.work__details {
+  padding: 10px;
+  list-style-type: none;
+  margin-left: 10%;
+}
+.work__details > li > h4 {
+  margin-bottom: 10px;
+}
+.work__details > li > p,
+.edu__details > li > p {
+  font-style: italic;
+  color: rgba(100, 100, 100, 0.9);
+}
+@media only screen and (max-width: 800px) {
+  .about__edu,
+  .about__work {
+    display: flex;
+    flex-direction: column;
+  }
+  .edu__title,
+  .work__title {
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,38 @@
+.project {
+  background-color: rgba(47, 167, 212, 0.8);
+  height: 100vh;
+}
+.project__main {
+  margin: 0 auto;
+  max-width: 1020px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.project > h2 {
+  padding: 10px;
+}
+.project > span > h3 {
+  font-size: 40px;
+}
+.project > span {
+  display: flex;
+  justify-content: center;
+}
+.project__cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+@media only screen and (max-width: 800px) {
+  .project {
+    height: fit-content;
+  }
+  .project__cards {
+    display: flex;
+    flex-direction: column;
+  }
+}

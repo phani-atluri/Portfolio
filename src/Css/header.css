@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+  width: 100%;
+}
+.header__MenuBurger {
+  display: none;
+}
+
+.header__navbar {
+  background-color: rgba(38, 46, 47, 0.8);
+  width: 100%;
+  display: flex;
+  top: 0;
+  position: sticky;
+  justify-content: center;
+  align-items: center;
+}
+.header__navbar {
+  display: flex;
+  justify-content: center;
+}
+.header__Nav {
+  margin: 20px;
+}
+.header__Nav > a {
+  text-decoration: none;
+  color: beige;
+}
+.header__Nav:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .header__MenuBurger {
+    height: 40px;
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+  .header__MenuBurger > button {
+    font-size: 20px;
+    border-style: none;
+  }
+  .header__navbar {
+    display: none;
+  }
+  .header__navmenu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}

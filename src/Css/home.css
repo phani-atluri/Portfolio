@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
+.home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(55, 181, 220);
+}
+
+.home__desc {
+  max-width: 1020px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-grow: 1;
+
+  width: 100%;
+  align-items: center;
+}
+.home__desc > h1 {
+  font-size: 60px;
+}
+.home__desc > p {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 30px;
+  margin: 20px auto;
+  padding: 10px;
+  font-weight: 900;
+}
+@media only screen and (max-width: 400px) {
+  .home .home__desc > p {
+    font-size: 2em;
+  }
+}
+.home__more {
+  border-radius: 50px;
+  background-color: antiquewhite;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 20px;
+}
