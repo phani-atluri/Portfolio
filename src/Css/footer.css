@@ -1,0 +1,9 @@
+.footer {
+  padding: 40px;
+  margin: 40 0;
+  background-color: rgba(100, 100, 100, 1);
+}
+.footer__social {
+  display: flex;
+  justify-content: space-around;
+}

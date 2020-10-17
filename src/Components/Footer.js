@@ -1,21 +1,11 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
-
+import "../Css/footer.css"
 function Footer() {
   return (
-    <div
-      className="footer"
-      style={{
-        padding: 40,
-        margin: "40 0",
-        backgroundColor: "rgba(100,100,100,1)",
-      }}
-    >
-      <div
-        className="footer__social"
-        style={{ display: "flex", justifyContent: "space-around" }}
-      >
+    <div className="footer">
+      <div className="footer__social">
         <a
           href="https://github.com/phani-atluri"
           style={{ textDecoration: "none", color: "black" }}

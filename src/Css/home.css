@@ -28,11 +28,6 @@
   padding: 10px;
   font-weight: 900;
 }
-@media only screen and (max-width: 400px) {
-  .home .home__desc > p {
-    font-size: 2em;
-  }
-}
 .home__more {
   border-radius: 50px;
   background-color: antiquewhite;
@@ -44,4 +39,15 @@
   position: absolute;
   bottom: 0;
   margin-bottom: 20px;
+}
+@media only screen and (max-width: 400px) {
+  .home .home__desc > p {
+    font-size: 1em;
+  }
+
+  .home__more {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+  }
 }

@@ -7,35 +7,35 @@ function Skills() {
       <h2>SKILLS</h2>
       <div className="skills__main">
         <p>HTML</p>
-        <div class="container">
-          <div class="skill html"></div>
+        <div className="container">
+          <div className="skill html"></div>
         </div>
 
         <p>CSS</p>
-        <div class="container">
-          <div class="skill css"></div>
+        <div className="container">
+          <div className="skill css"></div>
         </div>
 
         <p>JavaScript</p>
-        <div class="container">
-          <div class="skill js"></div>
+        <div className="container">
+          <div className="skill js"></div>
         </div>
 
         <p>React</p>
-        <div class="container">
-          <div class="skill React"></div>
+        <div className="container">
+          <div className="skill React"></div>
         </div>
         <p>NodeJS</p>
-        <div class="container">
-          <div class="skill node"></div>
+        <div className="container">
+          <div className="skill node"></div>
         </div>
         <p>MongoDB</p>
-        <div class="container">
-          <div class="skill mDB"></div>
+        <div className="container">
+          <div className="skill mDB"></div>
         </div>
         <p>Python</p>
-        <div class="container">
-          <div class="skill python"></div>
+        <div className="container">
+          <div className="skill python"></div>
         </div>
       </div>
     </section>

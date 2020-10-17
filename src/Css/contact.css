@@ -1,5 +1,5 @@
 .contact {
-  background-color: rgb(55, 181, 220);
+  background-color: rgba(47, 167, 212, 0.7);
 }
 .contact__main {
   max-width: 1020px;
@@ -10,7 +10,7 @@
 .contact__form {
   display: flex;
   flex-direction: column;
-  justify-content: centerß;
+  justify-content: center;
   align-items: center;
 }
 label {
@@ -20,7 +20,7 @@ label {
   border-top-style: none;
   border-right-style: none;
   border-left-style: none;
-  border-color: cornflowerblue;
+  border-color: black;
   border-bottom: 2px solid;
   width: 500px;
   height: 30px;
@@ -62,6 +62,9 @@ textarea:focus {
     font-size: 20px;
     padding: 5px;
   }
+}
+#email {
+  color: red;
 }
 @media only screen and (max-width: 300px) {
   textarea {

@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Piedra&display=swap");
 .about__main {
   max-width: 1020px;
   margin: 0 auto;
 }
 .about > h2 {
+  font-family: "Piedra", cursive;
   padding: 10px;
 }
 

@@ -2,6 +2,17 @@ import React from "react";
 import "../Css/contact.css";
 import SendIcon from "@material-ui/icons/Send";
 function Contact() {
+  var changeEmail=(mail) =>
+{
+ if ( /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(mail.target.value))
+  {
+    document.getElementById("email").innerText=""
+    return (true)
+  }
+document.getElementById("email").innerText="invalid email address!"
+   
+    return (false)
+}
   return (
     <section className="contact" id="contact">
       <div className="contact__main">
@@ -18,6 +29,7 @@ function Contact() {
                 name="name"
                 className="inpt"
                 placeholder="name"
+                required
               />
             </label>
             <label>
@@ -26,11 +38,13 @@ function Contact() {
                 name="email"
                 className="inpt"
                 placeholder="email"
+                required
+                onChange={changeEmail}
               />
             </label>
-
+            <span id="email"></span>
             <label>
-              <textarea placeholder="Message" name="message" />
+              <textarea placeholder="Message" name="message" required />
             </label>
             <button type="submit">
               <span>SEND</span>
